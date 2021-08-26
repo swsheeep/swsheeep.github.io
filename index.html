@@ -81,42 +81,38 @@
   <div class="article-inner">
     
     
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2021/08/26/%E5%9F%BA%E4%BA%8Ehexo%E5%92%8Cgithub%E7%9A%84%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/">[object Object]</a>
+    </h1>
+  
+
+      </header>
+    
     <div class="e-content article-entry" itemprop="articleBody">
       
         <h3 id="下载nodejs"><a href="#下载nodejs" class="headerlink" title="下载nodejs"></a>下载nodejs</h3><p>==npm== -v查看node版本</p>
-<h3 id="安装hexo博客框架"><a href="#安装hexo博客框架" class="headerlink" title="安装hexo博客框架"></a>安装hexo博客框架</h3><p>借助npm包管理工具下载淘宝镜像源npm install -g cnpm registry=<a target="_blank" rel="noopener" href="https://registry.npm.taobao.org/">https://registry.npm.taobao.org</a> 全局安装<br>即安装cnpm工具<br>这里新建了一个blog的文件夹以下操作在这个文件夹下完成</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">mkdir blog</span><br><span class="line">cd blog</span><br></pre></td></tr></table></figure>
-<p>cnpm install -g hexo-cli 安装hexo框架<br>初始化hexo </p>
-<blockquote>
-<p>hexo init</p>
-</blockquote>
-<p>新建文章</p>
-<blockquote>
-<p>hexo new”name”</p>
-</blockquote>
-<p>生成(generate)静态文件</p>
-<blockquote>
-<p>hexo g</p>
-</blockquote>
-<p>清理</p>
-<blockquote>
-<p>hexo clean</p>
-</blockquote>
-<p>hexo 部署到git上的工具hexo-deployer-git</p>
-<blockquote>
-<p>cnpm install –save hexo hexo-deployer-git</p>
-</blockquote>
-<h3 id="建gihub仓库"><a href="#建gihub仓库" class="headerlink" title="建gihub仓库"></a>建gihub仓库</h3><p>在github上新建一个名为‘yourname.github.io’的仓库<br>然后在blog中找到_config_yml的配置文件在deploy下配置</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">    type: git</span><br><span class="line">    repo: 仓库的地址</span><br></pre></td></tr></table></figure>
-<p>然后清理和部署</p>
-<blockquote>
-<p>hexo clean<br>hexo d</p>
-</blockquote>
+<h3 id="安装hexo博客框架"><a href="#安装hexo博客框架" class="headerlink" title="安装hexo博客框架"></a>安装hexo博客框架</h3><p>借助npm包管理工具下载淘宝镜像源</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install -g cnpm registry=https:<span class="comment">//registry.npm.taobao.org //全局安装cnpm工具</span></span><br></pre></td></tr></table></figure>
 
+<p>这里新建了一个blog的文件夹以下操作在这个文件夹下完成</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&gt; mkdir blog </span><br><span class="line">&gt; cd blog</span><br></pre></td></tr></table></figure>
+
+
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">cnpm install -g hexo-cli <span class="comment">//安装hexo框架</span></span><br><span class="line">&gt; hexo init <span class="comment">//初始化hexo</span></span><br><span class="line"></span><br><span class="line">&gt;hexo <span class="keyword">new</span><span class="string">&quot;name&quot;</span> <span class="comment">//新建文章</span></span><br><span class="line"></span><br><span class="line">&gt;hexo g <span class="comment">//生成(generate)静态文件</span></span><br></pre></td></tr></table></figure>
+
+<p>hexo 部署到git上的工具hexo-deployer-git的安装</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&gt; cnpm install --save hexo-deployer-git</span><br></pre></td></tr></table></figure>
+<h3 id="建gihub仓库"><a href="#建gihub仓库" class="headerlink" title="建gihub仓库"></a>建gihub仓库</h3><p>在github上新建一个名为‘yourname.github.io’的仓库<br>然后在blog中找到_config_yml的配置文件在deploy下配置</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">    type: git</span><br><span class="line">    <span class="attr">repo</span>: 仓库的地址</span><br></pre></td></tr></table></figure>
+<p>然后清理和部署</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&gt; hexo clean <span class="comment">//清理网页静态缓存(清理public文件夹)</span></span><br><span class="line">&gt; hexo d     <span class="comment">//利用hexo插件直接部署</span></span><br></pre></td></tr></table></figure>
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2021/08/26/%E5%9F%BA%E4%BA%8Ehexo%E5%92%8Cgithub%E7%9A%84%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/" data-id="cksszln020001lsuj84814jou" data-title="" class="article-share-link">Share</a>
+      <a data-url="http://example.com/2021/08/26/%E5%9F%BA%E4%BA%8Ehexo%E5%92%8Cgithub%E7%9A%84%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/" data-id="ckst0drda0001gcuj7iweaqqa" data-title="[object Object]" class="article-share-link">Share</a>
       
       
       
@@ -167,7 +163,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2021/08/26/hello-world/" data-id="cksszlmzs0000lsujey6qe9ql" data-title="Hello World" class="article-share-link">Share</a>
+      <a data-url="http://example.com/2021/08/26/hello-world/" data-id="ckst0drd50000gcujgiudcdkr" data-title="Hello World" class="article-share-link">Share</a>
       
       
       
@@ -210,7 +206,7 @@
       <ul>
         
           <li>
-            <a href="/2021/08/26/%E5%9F%BA%E4%BA%8Ehexo%E5%92%8Cgithub%E7%9A%84%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/">(no title)</a>
+            <a href="/2021/08/26/%E5%9F%BA%E4%BA%8Ehexo%E5%92%8Cgithub%E7%9A%84%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/">[object Object]</a>
           </li>
         
           <li>
