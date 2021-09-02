@@ -6,11 +6,11 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://example.com">
-  <title>Hexo</title>
+  <title>Archives: 2021/9 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta property="og:type" content="website">
 <meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://example.com/index.html">
+<meta property="og:url" content="http://example.com/archives/2021/09/index.html">
 <meta property="og:site_name" content="Hexo">
 <meta property="og:locale" content="en_US">
 <meta property="article:author" content="John Doe">
@@ -152,249 +152,47 @@
           <div id="js-content" class="content-ll">
             
   
-    <article id="post-linux最小化安装gcc和图形界面" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
+  
     
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2021/09/02/linux%E6%9C%80%E5%B0%8F%E5%8C%96%E5%AE%89%E8%A3%85gcc%E5%92%8C%E5%9B%BE%E5%BD%A2%E7%95%8C%E9%9D%A2/">linux最小化安装gcc和图形界面</a>
-    </h1>
-  
-
-        
-        <a href="/2021/09/02/linux%E6%9C%80%E5%B0%8F%E5%8C%96%E5%AE%89%E8%A3%85gcc%E5%92%8C%E5%9B%BE%E5%BD%A2%E7%95%8C%E9%9D%A2/" class="archive-article-date">
+    
+      
+      
+      <section class="archives-wrap">
+        <div class="archive-year-wrap">
+          <a href="/archives/2021" class="archive-year">2021</a>
+        </div>
+        <div class="archives">
+    
+    <article class="archive-article archive-type-post">
+  <div class="archive-article-inner">
+    <header class="archive-article-header">
+      	<div class="article-meta">
+	      	<a href="/2021/09/02/linux%E6%9C%80%E5%B0%8F%E5%8C%96%E5%AE%89%E8%A3%85gcc%E5%92%8C%E5%9B%BE%E5%BD%A2%E7%95%8C%E9%9D%A2/" class="archive-article-date">
   	<time datetime="2021-09-01T23:31:55.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-09-02</time>
 </a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h3 id="这里是基于vm15和centos7-9进行安装"><a href="#这里是基于vm15和centos7-9进行安装" class="headerlink" title="这里是基于vm15和centos7.9进行安装"></a>这里是基于vm15和centos7.9进行安装</h3><p>首先通过root账户登录然后运行<br>先安装GCC编辑器</p>
-<blockquote>
-<p>yum -y install gcc gcc-c++ kerner-devel</p>
-</blockquote>
-<p>然后安装Linux图形界面</p>
-<blockquote>
-<p>yum-y groupinstall “X Window System”</p>
-</blockquote>
-<p>2.安装图像界面程序(GNOME)<br>GNOME是运行在X Window System上的一哥图型界面程序</p>
-<blockquote>
-<p>yum -y groupinstall “GNOME Desktop”</p>
-</blockquote>
-<p>3.设置默认启动图形界面程序</p>
-<blockquote>
-<p>systemctl set-default graphical.target</p>
-</blockquote>
-<p>4.重启计算机</p>
-<blockquote>
-<p>reboot</p>
-</blockquote>
-<h4 id="拓展输入发和编程字体"><a href="#拓展输入发和编程字体" class="headerlink" title="拓展输入发和编程字体"></a>拓展输入发和编程字体</h4><p>1.需要root权限<br>2.输入 ==yum install ibus-libpinyin== 安装输入法</p>
-<p>3.在系统工具中找到设置点击”Region&amp;Language”点击加号在”添加输入源中找到”汉语(中国)”选中”汉语(Intelligent Pinyin)然后添加(A)</p>
-<p>在中面右上角zh即可将它修改为拼音</p>
-<p>4.修改终端界面</p>
-<blockquote>
-<p>编辑-首选项-颜色</p>
-</blockquote>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2021/09/02/linux%E6%9C%80%E5%B0%8F%E5%8C%96%E5%AE%89%E8%A3%85gcc%E5%92%8C%E5%9B%BE%E5%BD%A2%E7%95%8C%E9%9D%A2/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
         </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-基于hexo和github的博客搭建" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
+    	 
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2021/08/26/%E5%9F%BA%E4%BA%8Ehexo%E5%92%8Cgithub%E7%9A%84%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/">hexo博客</a>
+      <a class="archive-article-title" href="/2021/09/02/linux%E6%9C%80%E5%B0%8F%E5%8C%96%E5%AE%89%E8%A3%85gcc%E5%92%8C%E5%9B%BE%E5%BD%A2%E7%95%8C%E9%9D%A2/">linux最小化安装gcc和图形界面</a>
     </h1>
   
 
-        
-        <a href="/2021/08/26/%E5%9F%BA%E4%BA%8Ehexo%E5%92%8Cgithub%E7%9A%84%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/" class="archive-article-date">
-  	<time datetime="2021-08-26T13:05:53.770Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-08-26</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h3 id="安装hexo博客框架"><a href="#安装hexo博客框架" class="headerlink" title="安装hexo博客框架"></a>安装hexo博客框架</h3><p>借助npm包管理工具下载淘宝镜像源</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install -g cnpm registry=https:registry.npm.taobao.org <span class="comment">//全局安装cnpm工具</span></span><br></pre></td></tr></table></figure>
+        <div class="article-info info-on-right">
+          
+          
 
-<p>这里新建了一个blog的文件夹以下操作在这个文件夹下完成</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&gt; mkdir blog    <span class="comment">//新建一个blog的文件夹</span></span><br><span class="line">&gt; cd blog       <span class="comment">//进入blog文件夹   </span></span><br></pre></td></tr></table></figure>
-
-
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&gt; cnpm install -g hexo-cli <span class="comment">//安装hexo框架</span></span><br><span class="line">&gt; hexo init                <span class="comment">//初始化hexo</span></span><br><span class="line">&gt; hexo <span class="keyword">new</span> <span class="string">&quot;name&quot;</span>           <span class="comment">//新建文章</span></span><br><span class="line">&gt; hexo g                   <span class="comment">//生成(generate)静态文件</span></span><br></pre></td></tr></table></figure>
-
-<p>hexo 部署到git上的工具hexo-deployer-git的安装</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&gt; cnpm install --save hexo-deployer-git</span><br></pre></td></tr></table></figure>
-<h3 id="github仓库部署"><a href="#github仓库部署" class="headerlink" title="github仓库部署"></a>github仓库部署</h3><p>在github上新建一个名为<code>yourname.github.io</code>的仓库<br>然后在blog中找到_config_yml的配置文件在deploy下配置</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">    type: git</span><br><span class="line">    <span class="attr">repo</span>: 仓库的地址</span><br></pre></td></tr></table></figure>
-<p>然后清理和部署</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&gt; hexo clean <span class="comment">//清理网页静态缓存(清理public文件夹)</span></span><br><span class="line">&gt; hexo d     <span class="comment">//利用hexo插件直接部署</span></span><br></pre></td></tr></table></figure>
-<p>然后访问<a target="_blank" rel="noopener" href="http://yourname.github.io/">http://yourname.github.io</a></p>
-<h3 id="跟换主题"><a href="#跟换主题" class="headerlink" title="跟换主题"></a>跟换主题</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&gt; git clone http:<span class="comment">//github.com/litten/hexo-theme-yilia.git themes/yilia</span></span><br><span class="line"></span><br><span class="line">&gt; vim _config.yml <span class="comment">//修改主题配置</span></span><br><span class="line">    在Extensions下修改theme主题为对应主题</span><br></pre></td></tr></table></figure>
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2021/08/26/%E5%9F%BA%E4%BA%8Ehexo%E5%92%8Cgithub%E7%9A%84%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
+        </div>
+        <div class="clearfix"></div>
+    </header>
   </div>
 </article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
   
-    <article id="post-hello-world" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
+  
+    </div></section>
+  
+
     
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2021/08/26/hello-world/">Hello World</a>
-    </h1>
-  
-
-        
-        <a href="/2021/08/26/hello-world/" class="archive-article-date">
-  	<time datetime="2021-08-26T12:41:06.077Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-08-26</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2021/08/26/hello-world/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-  
 
 
           </div>
@@ -416,9 +214,9 @@
     <script>
 	var yiliaConfig = {
 		mathjax: false,
-		isHome: true,
+		isHome: false,
 		isPost: false,
-		isArchive: false,
+		isArchive: true,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
